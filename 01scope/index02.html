@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul>
+        <li>목록1</li>
+        <li>목록2</li>
+        <li>목록3</li>
+        <li>목록4</li>
+    </ul>
+
+    <script>
+        var li = document.querySelectorAll('li');
+        
+        //i = 0, 1, 2, 3 ...
+        for(let i = 0; i < li.length; i++) {
+            li[i].addEventListener('click', function() {
+                console.log(i);
+            })
+        }
+
+        //console.log(i); //var 변수일 경우 :4 //let변수일 경우 i는 스코프가 {} 안에서만 가능하기 때문에 바깥에서 i 출력시 error
+
+    </script>
+</body>
+</html>
